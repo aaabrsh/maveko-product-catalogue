@@ -1,1 +1,18 @@
-<p>header works!</p>
+<p>
+    <mat-toolbar>
+      <span>MAVEKO</span>
+      
+      <span class="example-spacer"></span>  
+      <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input type="text" pInputText placeholder="Search" [(ngModel)]="value1" class="search-bar" />
+    </span>    
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>exit_to_app</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
