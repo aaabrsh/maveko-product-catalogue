@@ -1,11 +1,18 @@
-.container {
-    width: auto;
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.116);
-  }
+// .container {
+//     width: auto;
+//     margin: 10px;
+//     background-color: rgba(255, 255, 255, 0.116);
+//   }
 .side-nav{
     width: 20%;
 }
 .content{
   padding: 2rem;
+}
+.container{
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  overflow: auto;
 }

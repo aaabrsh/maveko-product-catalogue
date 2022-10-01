@@ -1,14 +1,14 @@
 <mat-card class="example-card">
     <mat-card-header>
-      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-title>{{cardTitle}}</mat-card-title>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <img mat-card-image [src]='cardImage' alt=" ">
     <mat-card-content>
       <p>
-        The Shiba Inu is the smallest of the six original ...
+        {{ cardDescription }}
       </p>
     </mat-card-content>
     <mat-card-actions align="end">
-      <mat-icon mat-button>arrow_forward</mat-icon>
+    <mat-icon mat-button>arrow_forward</mat-icon>    
     </mat-card-actions>
 </mat-card>

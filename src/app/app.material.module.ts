@@ -13,6 +13,7 @@ import { MatSelectModule } from '@angular/material/select';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -31,7 +32,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
         MatSelectModule,
         MatAutocompleteModule,
         MatToolbarModule,
-        MatSidenavModule
+        MatSidenavModule,
+        MatGridListModule
     ]
 })
 export class MaterialModule { }
