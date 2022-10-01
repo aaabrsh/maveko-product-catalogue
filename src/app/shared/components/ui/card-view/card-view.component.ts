@@ -11,6 +11,7 @@ export class CardViewComponent implements OnInit {
   @Input() cardTitle: string = '';
   @Input() cardImage: string = '';
   @Input() cardDescription:string = '';
+  @Input() routerLink:string = '';
   constructor() { }
 
   ngOnInit(): void {

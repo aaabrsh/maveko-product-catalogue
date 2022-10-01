@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CategoryListComponent } from './components/container/category-list/category-list.component';
+import { ProductDetailComponent } from './components/container/product-detail/product-detail.component';
 import { ProductListComponent } from './components/container/product-list/product-list.component';
 
 const routes: Routes = [
   { path: 'products', component: ProductListComponent },
-  { path: 'categories',component:CategoryListComponent}
+  { path: 'categories',component:CategoryListComponent},
+  { path:'product-detail',component:ProductDetailComponent}
 ];
 
 @NgModule({

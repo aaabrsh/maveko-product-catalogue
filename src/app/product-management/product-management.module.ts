@@ -8,13 +8,17 @@ import { ProductListViewComponent } from './components/ui/product-list-view/prod
 import { ProductListComponent } from './components/container/product-list/product-list.component';
 import { CategoryListViewComponent } from './components/ui/category-list-view/category-list-view.component';
 import { CategoryListComponent } from './components/container/category-list/category-list.component';
+import { ProductDetailViewComponent } from './components/ui/product-detail-view/product-detail-view.component';
+import { ProductDetailComponent } from './components/container/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
     ProductListViewComponent,
     ProductListComponent,
     CategoryListViewComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    ProductDetailViewComponent,
+    ProductDetailComponent
   ],
   imports: [
     CommonModule,
