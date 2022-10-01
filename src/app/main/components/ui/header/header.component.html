@@ -1,18 +1,19 @@
 <p>
-    <mat-toolbar>
-      <span>MAVEKO</span>
-      
+    <mat-toolbar class="toolbar">
+      <span class="logo">MAVEKO</span> 
       <span class="example-spacer"></span>  
-      <span class="p-input-icon-left">
+      <span class="p-input-icon-left search-bar">
         <i class="pi pi-search"></i>
-        <input type="text" pInputText placeholder="Search" [(ngModel)]="value1" class="search-bar" />
+        <input type="text" pInputText placeholder="Search" [(ngModel)]="value1" class="search-input-field" />
     </span>    
       <span class="example-spacer"></span>
+      <button mat-button> Products</button>
+      <button mat-button> Brands</button>
+      <button mat-button> Suppliers</button>
+      <button mat-button>Previous Activity</button>
       <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>account_circle</mat-icon>
+        <mat-icon>add_shopping_cart</mat-icon>
       </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>exit_to_app</mat-icon>
-      </button>
+      
     </mat-toolbar>
   </p>

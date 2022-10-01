@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/ui/header/header.component';
 import { FooterComponent } from './components/ui/footer/footer.component';
 import { LayoutComponent } from './components/container/layout/layout.component';
 import { MenuComponent } from './components/container/menu/menu.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -14,12 +15,14 @@ import { MenuComponent } from './components/container/menu/menu.component';
     HeaderComponent,
     FooterComponent,
     LayoutComponent,
-    MenuComponent
+    MenuComponent,
+
   ],
   imports: [
     CommonModule,
     MainRoutingModule,
-    AppCommonModule
+    AppCommonModule,
+    SharedModule
   ]
 })
 export class MainModule { }

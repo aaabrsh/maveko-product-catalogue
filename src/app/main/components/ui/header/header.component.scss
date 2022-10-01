@@ -1,6 +1,18 @@
+.toolbar{
+    background-color: #05184C;
+    color: azure;
+}
 .example-spacer {
     flex: 1 1 auto;
   }
 .search-bar{
+    margin-left: 12rem;
+}  
+.search-input-field{
     width: 25rem;
+}
+.logo{
+    font-size: x-large;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
 }
