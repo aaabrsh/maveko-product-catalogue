@@ -11,7 +11,7 @@ import {BreadcrumbModule} from 'primeng/breadcrumb';
 import { FileUploadModule } from 'primeng/fileupload';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
 import {InputTextModule} from 'primeng/inputtext';
-
+import {TreeModule} from 'primeng/tree';
 @NgModule({
     exports: [
         SidebarModule,
@@ -25,7 +25,8 @@ import {InputTextModule} from 'primeng/inputtext';
         BreadcrumbModule,
         FileUploadModule,
         ConfirmDialogModule,
-        InputTextModule
+        InputTextModule,
+        TreeModule
     ]
 })
 export class NgPrimeModule { }

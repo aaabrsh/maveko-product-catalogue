@@ -1,1 +1,7 @@
-<app-product-detail-view></app-product-detail-view>
+<app-product-detail-view *ngFor="let board of boards|async"
+[boardTitle]="board.name"
+[boardImage]="board.tag"
+[boardDescription]="board.description"
+[items]="items|async"
+
+></app-product-detail-view>

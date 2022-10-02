@@ -1,6 +1,8 @@
-<app-card-view 
-[cardTitle]="cardTitle"
-[cardImage]="cardImage"
-[cardDescription]="cardDescription"
-[routerLink]="routerLink"
-></app-card-view>
+<div class="product-container">
+        <app-card-view *ngFor="let card of cards"
+        [cardTitle]="card.name"
+        [cardImage]="card.tag"
+        [cardDescription]="card.description"
+        [routerLink]="'product_items/'+card.id"
+        ></app-card-view>     
+</div>

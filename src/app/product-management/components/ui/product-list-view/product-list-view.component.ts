@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'src/app/product-management/models/product.model';
 
 @Component({
   selector: 'app-product-list-view',
@@ -7,10 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductListViewComponent implements OnInit {
 
-  cardTitle:string ='The Card Title';
-  cardDescription = 'The Card Description';
-  cardImage = 'https://material.angular.io/assets/img/examples/shiba2.jpg' 
-  routerLink = '/product-detail'
+ @Input()cards: Product[] | null = [];
   constructor() { }
 
   ngOnInit(): void {
