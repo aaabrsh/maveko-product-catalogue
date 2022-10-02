@@ -39,6 +39,5 @@ export class AuthService {
       alert('not authorized');
       return false;
     }
-    // console.log(_finaldata);
   }
 }

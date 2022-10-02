@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdminRoutingModule } from '../admin/admin-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    AdminRoutingModule
   ],
   exports: [
     LoginComponent,

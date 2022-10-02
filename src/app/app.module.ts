@@ -8,6 +8,7 @@ import { AppCommonModule } from './app.common.module';
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import { environment } from '../environments/environment';
 import { AuthModule } from './auth/auth.module';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AuthModule } from './auth/auth.module';
     AppCommonModule,
     environment.production ? [] : AkitaNgDevtools.forRoot(),
     AuthModule,
+    AdminModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
