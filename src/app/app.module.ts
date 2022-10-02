@@ -23,7 +23,7 @@ import { AdminModule } from './admin/admin.module';
     AppCommonModule,
     FormsModule,
     HttpClientModule,
-    environment.production ? [] : AkitaNgDevtools.forRoot()
+    environment.production ? [] : AkitaNgDevtools.forRoot(),
     AuthModule,
     AdminModule
   ],
