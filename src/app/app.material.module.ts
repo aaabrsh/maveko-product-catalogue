@@ -14,7 +14,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import {MatTreeModule} from '@angular/material/tree';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 @NgModule({
@@ -33,7 +34,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
         MatAutocompleteModule,
         MatToolbarModule,
         MatSidenavModule,
-        MatGridListModule
+        MatGridListModule,
+        MatTreeModule,
+        MatBadgeModule
     ]
 })
 export class MaterialModule { }

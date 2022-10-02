@@ -1,4 +1,11 @@
 <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon> 
   </button>
-<span class="top-text">Categories</span>  
+<span class="top-text">Categories</span>
+<mat-nav-list>
+  <mat-list-item *ngFor="let link of links" class="menu-text">
+     <a matLine [routerLink]="link.route">{{ link.name }}</a>
+     <button mat-icon-button (click)="showInfo(link.route)">
+     </button>
+  </mat-list-item>
+</mat-nav-list>

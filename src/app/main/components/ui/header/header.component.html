@@ -4,16 +4,15 @@
       <span class="example-spacer"></span>  
       <span class="p-input-icon-left search-bar">
         <i class="pi pi-search"></i>
-        <input type="text" pInputText placeholder="Search" [(ngModel)]="value1" class="search-input-field" />
+        <input type="text" pInputText placeholder="Search" [(ngModel)]="value" class="search-input-field" (keyup.enter)="searchValueChange()"/>
     </span>    
       <span class="example-spacer"></span>
       <button mat-button routerLink='/products'> Products</button>
       <button mat-button routerLink='/categories'> Brands</button>
       <button mat-button> Suppliers</button>
       <button mat-button>Previous Activity</button>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>add_shopping_cart</mat-icon>
-      </button>
-      
+      <mat-icon [matBadge]="orderCount" matBadgeColor="warn">add_shopping_cart</mat-icon>
+      <span class="cdk-visually-hidden">
+      </span>      
     </mat-toolbar>
   </p>
