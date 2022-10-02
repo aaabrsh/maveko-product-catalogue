@@ -1,14 +1,14 @@
 <div class="nav">
-	<a href="">Address</a>
-	<a href="">Categories</a>
-	<a href="">Contact info</a>
-	<a href="">Currencie</a>
-	<a href="">Customer</a>
-	<a href="">Package</a>
-	<a href="">Product Item</a>
-	<a href="">Product</a>
-	<a href="">Suppliers</a>
-	<a href="">Unit of Measures</a>
-	<a href="">Users</a>
+	<a [routerLink]="['/admin/address']">Address</a>
+	<a [routerLink]="['/admin/categories']">Categories</a>
+	<a [routerLink]="['/admin/contact_info']">Contact info</a>
+	<a [routerLink]="['/admin/currencie']">Currencie</a>
+	<a [routerLink]="['/admin/customer']">Customer</a>
+	<a [routerLink]="['/admin/package']">Package</a>
+	<a [routerLink]="['/admin/product_item']">Product Item</a>
+	<a [routerLink]="['/admin/product']">Product</a>
+	<a [routerLink]="['/admin/suppliers']">Suppliers</a>
+	<a [routerLink]="['/admin/unit_of_measure']">Unit of Measures</a>
+	<a [routerLink]="['/admin/users']">Users</a>
 </div>
-<h2>Admin Panel</h2>
+<router-outlet></router-outlet>

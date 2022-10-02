@@ -5,12 +5,14 @@ import { AdminComponent } from './admin.component';
 
 import { RoleGuard } from '../auth/shared/role.guard';
 
+import { ProductCategoryFormComponent } from './components/product-category-form/product-category-form.component';
+
+// canActivate: [RoleGuard]
 const routes: Routes = [
-  { path: 'admin', component: AdminComponent, canActivate: [RoleGuard]
-    // children: [
-    //   {path: 'login', component: },
-    //   {path: 'login', component: },
-    // ]
+  { path: 'admin', component: AdminComponent,
+    children: [
+      {path: 'categories', component: ProductCategoryFormComponent}
+    ]
   }
 ];
 
