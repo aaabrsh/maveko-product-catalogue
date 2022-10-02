@@ -1,0 +1,15 @@
+<form [formGroup]="form" (submit)="submit()" class="login-form">
+    <h1 class="h3 mb-3 fw-normal fields">Address Form</h1>
+
+    <input formControlName="address_line1" class="form-control fields" placeholder="address_line 1">
+
+    <input formControlName="address_line2" class="form-control fields" placeholder="address_line 2">
+
+    <input formControlName="city" class="form-control fields" placeholder="city">
+
+    <input formControlName="region" class="form-control fields" placeholder="region">
+
+    <input formControlName="postal_code" class="form-control fields" placeholder="postal code">
+
+    <button class="w-100 btn btn-lg btn-primary fields" type="submit">Submit</button>
+</form>

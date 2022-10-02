@@ -1,0 +1,15 @@
+<form [formGroup]="form" (submit)="submit()" class="login-form">
+    <h1 class="h3 mb-3 fw-normal fields">Customer Form</h1>
+
+    <input formControlName="first_name" class="form-control fields" placeholder="first name">
+
+    <input formControlName="last_name" class="form-control fields" placeholder="last name">
+
+    <input formControlName="contact_information" class="form-control fields" placeholder="contact_information">
+
+    <input formControlName="user" class="form-control fields" placeholder="user">
+
+    <input formControlName="address" class="form-control fields" placeholder="address">
+
+    <button class="w-100 btn btn-lg btn-primary fields" type="submit">Submit</button>
+</form>

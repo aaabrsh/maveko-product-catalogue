@@ -1,0 +1,13 @@
+<form [formGroup]="form" (submit)="submit()" class="login-form">
+    <h1 class="h3 mb-3 fw-normal fields">Contact Information Form</h1>
+
+    <input formControlName="primary_phone_number" class="form-control fields" placeholder="primary phone number">
+
+    <input formControlName="secondary_phone_number" class="form-control fields" placeholder="secondary phone number">
+
+    <input formControlName="fax" class="form-control fields" placeholder="fax">
+
+    <input formControlName="email" class="form-control fields" placeholder="email">
+
+    <button class="w-100 btn btn-lg btn-primary fields" type="submit">Submit</button>
+</form>
