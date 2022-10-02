@@ -1,0 +1,14 @@
+<form [formGroup]="form" (submit)="submit()" class="login-form">
+
+    <h1 class="h3 mb-3 fw-normal fields">Please register</h1>
+
+    <input formControlName="username" class="form-control fields" placeholder="Name">
+
+    <input formControlName="email" type="email" class="form-control fields" placeholder="Email">
+
+    <input formControlName="password" type="password" class="form-control fields" placeholder="Password">
+    <input formControlName="confirm_password" type="password" class="form-control fields" placeholder="Confirm Password">
+
+    <button class="w-100 btn btn-lg btn-primary fields" type="submit">Submit</button>
+
+  </form>
