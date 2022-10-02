@@ -1,41 +1,37 @@
 <div class="container">
-    <mat-card class="example-card">
-        <mat-card-actions align="end">
-            <button mat-button><mat-icon>add_shopping_cart</mat-icon>Add To Cart</button>
-          </mat-card-actions>
-        <mat-card-header>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-          </p>
-        </mat-card-content>
-      </mat-card>
-     
-      <p-table [value]="products" responsiveLayout="scroll">
-        <ng-template pTemplate="header">
-            <tr>
-                <th>Items</th>
-                <th>Name</th>
-                <th>Size</th>
-                <th>Weight</th>
-            </tr>
-        </ng-template>
-        <ng-template pTemplate="body" let-product>
-            <tr>
-                <td>{{product.code}}</td>
-                <td>{{product.name}}</td>
-                <td>{{product.category}}</td>
-                <td>{{product.quantity}}</td>
-            </tr>
-        </ng-template>
-    </p-table>
-      
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{ boardTitle }}</mat-card-title>
+    </mat-card-header>
+    <img
+      mat-card-image
+      [src]="boardImage"
+      alt="Photo of a Shiba Inu"
+      class="Image"
+    />
+    <mat-card-content>
+      <p>
+        {{ boardDescription }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-button>
+        <mat-icon>add_shopping_cart</mat-icon>Add To Cart
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <div class="table-container">
+    <table>
+      <tr>
+        <th><h2>Color</h2></th>
+        <th><h2>Size</h2></th>
+        <th><h2>Price</h2></th>
+      </tr>
+      <tr *ngFor="let item of items">
+        <td><b>{{item.color}}</b></td>
+        <td><b>{{item.size}}</b></td>
+        <td><b>{{item.price}}</b></td>
+      </tr>
+    </table>
+  </div>
 </div>
-
-  

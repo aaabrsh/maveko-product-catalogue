@@ -1,9 +1,37 @@
 .example-card {
     max-width: 50%;
+    width: 60%;
   }
 .container{
     display: flex;
-    justify-content: space-around;
-}  
+    justify-content: space-between;
 
-  
+}
+h2{
+  color: black;
+}
+.table-container{
+    width: 38%;
+}  
+table {
+  border: 1px solid rgb(0, 0, 0); 
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid rgba(0, 0, 0, 0);
+  text-align: left;
+  padding: 8px;
+}
+
+tr{
+  background-color: rgba(221, 215, 215, 0);
+  border: 1px solid rgb(0, 0, 0); 
+  color: rgba(255, 255, 255, 0);
+}
+
+th{
+  border: 1px solid rgb(0, 0, 0); 
+}

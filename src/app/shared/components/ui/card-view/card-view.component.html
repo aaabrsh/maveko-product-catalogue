@@ -1,14 +1,13 @@
-<mat-card class="example-card">
-    <mat-card-header>
-      <mat-card-title>{{cardTitle}}</mat-card-title>
-    </mat-card-header>
-    <img mat-card-image [src]='cardImage' alt=" ">
+<mat-card class="example-card">   
+      <img mat-card-image [src]='cardImage' alt=" " >
+    
+    <mat-card-title>{{cardTitle}}</mat-card-title>
     <mat-card-content>
       <p>
         {{ cardDescription }}
       </p>
     </mat-card-content>
     <mat-card-actions align="end">
-    <mat-icon mat-button [routerLink]="routerLink">arrow_forward</mat-icon>    
+    <mat-icon class="detail-button" mat-button [routerLink]="routerLink">arrow_forward</mat-icon>    
     </mat-card-actions>
 </mat-card>

@@ -7,6 +7,9 @@ import { ProductListComponent } from './components/container/product-list/produc
 import { AuthGuard } from '../auth/shared/auth.guard';
 
 const routes: Routes = [
+  { path: '', component: ProductListComponent },
+  { path: 'categories',component:CategoryListComponent},
+  { path:'product_items/:id',component:ProductDetailComponent}
   { path: 'products', component: ProductListComponent, canActivate: [AuthGuard] },
   { path: 'categories',component:CategoryListComponent, canActivate: [AuthGuard]},
   { path:'product-detail',component:ProductDetailComponent, canActivate: [AuthGuard]}
