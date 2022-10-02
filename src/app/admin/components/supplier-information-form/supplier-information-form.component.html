@@ -1,1 +1,11 @@
-<p>supplier-information-form works!</p>
+<form [formGroup]="form" (submit)="submit()" class="login-form">
+    <h1 class="h3 mb-3 fw-normal fields">Supplier Form</h1>
+
+    <input formControlName="company_name" class="form-control fields" placeholder="company name">
+
+    <input formControlName="address" class="form-control fields" placeholder="address">
+
+    <input formControlName="contact_information" class="form-control fields" placeholder="contact_information">
+
+    <button class="w-100 btn btn-lg btn-primary fields" type="submit">Submit</button>
+</form>
