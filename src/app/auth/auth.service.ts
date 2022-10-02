@@ -9,13 +9,13 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   proceedLogin(usercred: any){
-    console.log(usercred)
-    return this.http.post('http://localhost:3000/login', usercred)
+    // console.log(usercred)
+    return this.http.post('https://product-catalog-api.onrender.com/login', usercred)
   }
 
   proceedRegister(usercred: any){
-    console.log(usercred)
-    return this.http.post('http://localhost:3000/sign_up', {payload: usercred})
+    // console.log(usercred)
+    return this.http.post('https://product-catalog-api.onrender.com/sign_up', {payload: usercred})
   }
 
   isLoggedIn(){
@@ -33,6 +33,7 @@ export class AuthService {
     var _atobdata = atob(_extractedToken);
     var _finaldata = JSON.parse(_atobdata);
 
+    // console.log(_finaldata)
     if(_finaldata.user_type == 'Admin'){
       return true;
     }else{

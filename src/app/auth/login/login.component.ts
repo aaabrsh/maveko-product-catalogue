@@ -25,9 +25,17 @@ export class LoginComponent implements OnInit {
       this.service.proceedLogin(this.form.value).subscribe(res => {
         if(res != null){
           this.responsedata = res;
+          console.log(this.responsedata)
 
           if(this.responsedata.success == true){
             localStorage.setItem('token', this.responsedata.jwt);
+
+              // var _extractedToken = this.responsedata.jwt.split('.')[1];
+              // var _atobdata = atob(_extractedToken);
+              // var _finaldata = JSON.parse(_atobdata);
+              // console.log(_finaldata);
+
+
             this.router.navigate([''])          
           }else{
             alert("not registered");
