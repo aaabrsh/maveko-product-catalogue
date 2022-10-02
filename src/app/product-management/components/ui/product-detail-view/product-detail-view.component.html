@@ -1,11 +1,7 @@
 <div class="container">
     <mat-card class="example-card">
-        <mat-card-actions align="end">
-            <button mat-button><mat-icon>add_shopping_cart</mat-icon>Add To Cart</button>
-          </mat-card-actions>
         <mat-card-header>
           <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
         </mat-card-header>
         <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
         <mat-card-content>
@@ -15,6 +11,9 @@
             bred for hunting.
           </p>
         </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button><mat-icon>add_shopping_cart</mat-icon>Add To Cart</button>
+        </mat-card-actions>
       </mat-card>
      
       <p-table [value]="products" responsiveLayout="scroll">
